@@ -36,6 +36,11 @@ public class GalleryController {
 	public String index(Model model) throws DataGridException {
 		log.info("index()");
 
+		if (!pluggableSearchEnabled) {
+			log.error("search in not configured for this grid");
+			return "search/searchNotConfigured";
+		}
+
 		return "browsev2/galleryMain";
 	}
 
