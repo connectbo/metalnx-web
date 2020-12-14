@@ -2,6 +2,7 @@
   <!-- Search -->
   <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="widgetsContainer">
       <span>{{ formattedPath }}</span>
       <span class="widgets">
@@ -109,6 +110,14 @@
         <div class="thumbnail_name">{{ item.name }}</div>
         </a>
 >>>>>>> Update UI
+=======
+    <b-form-select v-model="selected" class="thumbnail_select" :options="options">
+    </b-form-select>
+    <div class="galleryContainer">
+      <div class="gallery" v-for="item in demo.items">
+        <img v-bind:class="[selected]" :src="require(`${item.thumbnails}`)" />
+        <div class="name">{{ item.name }}</div>
+>>>>>>> Refactor Flexbox
       </div>
     </div>
   </div>
@@ -121,6 +130,7 @@ export default {
   name: "Gallery",
   components: {},
   data() {
+<<<<<<< HEAD
 <<<<<<< HEAD
     const currentUrl = window.location;
     const url = window.location.search;
@@ -158,6 +168,8 @@ export default {
     }).catch(e => console.log(e));
 >>>>>>> Update UI
 
+=======
+>>>>>>> Refactor Flexbox
     var demo = {
       location: "testLocation",
       items: [
@@ -166,17 +178,22 @@ export default {
           name: "sample1.png",
           lastModified: "2020-12-14",
 <<<<<<< HEAD
+<<<<<<< HEAD
           thumbnails: "./img/sample1.png",
           fileSize: "10 MB",
           fileType: "Portable Network Graphics",
 =======
           thumbnails: "https://images.pexels.com/photos/3873163/pexels-photo-3873163.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample1.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 2,
           name: "sample2.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample2.png",
           fileSize: "10 MB",
@@ -184,11 +201,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/4021808/pexels-photo-4021808.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample2.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 3,
           name: "sample3.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample3.png",
           fileSize: "10 MB",
@@ -196,11 +217,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/3825541/pexels-photo-3825541.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample3.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 4,
           name: "sample4.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample7.png",
           fileSize: "10 MB",
@@ -208,11 +233,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/3845729/pexels-photo-3845729.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample7.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 5,
           name: "sample5.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample5.png",
           fileSize: "10 MB",
@@ -220,11 +249,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/3683036/pexels-photo-3683036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample5.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 6,
           name: "sample6.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample6.png",
           fileSize: "10 MB",
@@ -232,11 +265,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/4046948/pexels-photo-4046948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample6.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 7,
           name: "sample7.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample7.png",
           fileSize: "10 MB",
@@ -244,11 +281,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/1250655/pexels-photo-1250655.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample7.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 8,
           name: "sample8.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample8.png",
           fileSize: "10 MB",
@@ -256,11 +297,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/3952224/pexels-photo-3952224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample8.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 7,
           name: "sample9.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample9.png",
           fileSize: "10 MB",
@@ -268,11 +313,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample9.jpg",
+>>>>>>> Refactor Flexbox
         },
         {
           id: 8,
           name: "sample10.png",
           lastModified: "2020-12-14",
+<<<<<<< HEAD
 <<<<<<< HEAD
           thumbnails: "./img/sample10.png",
           fileSize: "10 MB",
@@ -280,11 +329,15 @@ export default {
 =======
           thumbnails: "https://images.pexels.com/photos/339619/pexels-photo-339619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 >>>>>>> Update UI
+=======
+          thumbnails: "./img/sample10.jpg",
+>>>>>>> Refactor Flexbox
         },
       ],
     };
     return {
       demo,
+<<<<<<< HEAD
 <<<<<<< HEAD
       currentUrl,
       url,
@@ -316,11 +369,20 @@ export default {
     };
   },
 >>>>>>> Update UI
+=======
+      selected: null,
+      options: ["small", "medium", "large"]
+    };
+  },
+>>>>>>> Refactor Flexbox
 };
 </script> 
 <style>
 .large {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Refactor Flexbox
   width: 125px;
   height: 125px;
 }
@@ -337,26 +399,43 @@ export default {
   align-content: flex-start;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Refactor Flexbox
 .medium {
   width: 100px;
   height: 100px;
 }
 
+<<<<<<< HEAD
 .small {
+=======
+.small{
+>>>>>>> Refactor Flexbox
   width: 75px;
   height: 75px;
 }
 
+<<<<<<< HEAD
 .thumbnail_select {
+=======
+.thumbnail_select{
+>>>>>>> Refactor Flexbox
   width: 100px;
   margin: 20px 10px auto 40px;
 }
 
+<<<<<<< HEAD
 .gallery {
+=======
+.gallery{
+>>>>>>> Refactor Flexbox
   margin: 10px 20px 10px 20px;
   text-align: center;
 }
 
+<<<<<<< HEAD
 .gallery-nav{
   margin: 10px 10px 10px 30px;
 }
@@ -457,4 +536,9 @@ export default {
   }
 
 >>>>>>> Update UI
+=======
+.name{
+  margin:5px auto 5px auto;
+}
+>>>>>>> Refactor Flexbox
 </style>
