@@ -175,7 +175,7 @@ export default {
           fileType: "Portable Network Graphics",
         },
         {
-          id: 9,
+          id: 7,
           name: "sample9.png",
           lastModified: "2020-12-14",
           thumbnails: "./img/sample9.png",
@@ -183,7 +183,7 @@ export default {
           fileType: "Portable Network Graphics",
         },
         {
-          id: 10,
+          id: 8,
           name: "sample10.png",
           lastModified: "2020-12-14",
           thumbnails: "./img/sample10.png",
