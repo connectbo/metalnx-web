@@ -6,7 +6,7 @@
     <div class="galleryContainer">
       <div class="gallery" v-for="item in demo.items">
         <img v-bind:class="[selected]" :src="require(`${item.thumbnails}`)" />
-        <div class="name">{{ item.name }}</div>
+        <div class="thumbnailName">{{ item.name }}</div>
       </div>
     </div>
   </div>
@@ -86,52 +86,11 @@ export default {
     };
     return {
       demo,
-      selected: null,
+      selected: "medium",
       options: ["small", "medium", "large"]
     };
   },
 };
 </script> 
 <style>
-.large {
-  width: 125px;
-  height: 125px;
-}
-
-.galleryContainer {
-  max-width: 100%;
-  margin-left: 20px;
-  margin-top: 40px;
-  margin-right: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-}
-
-
-.medium {
-  width: 100px;
-  height: 100px;
-}
-
-.small{
-  width: 75px;
-  height: 75px;
-}
-
-.thumbnail_select{
-  width: 100px;
-  margin: 20px 10px auto 40px;
-}
-
-.gallery{
-  margin: 10px 20px 10px 20px;
-  text-align: center;
-}
-
-.name{
-  margin:5px auto 5px auto;
-}
 </style>

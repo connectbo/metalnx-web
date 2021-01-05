@@ -11,7 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.emc.metalnx.controller.api.SearchApiController;
+import com.emc.metalnx.controller.api.GalleryApiController;
 import com.emc.metalnx.core.domain.exceptions.DataGridException;
 
 /**
@@ -35,11 +35,6 @@ public class GalleryController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(Model model) throws DataGridException {
 		log.info("index()");
-
-		if (!pluggableSearchEnabled) {
-			log.error("search in not configured for this grid");
-			return "search/searchNotConfigured";
-		}
 
 		return "browsev2/galleryMain";
 	}
