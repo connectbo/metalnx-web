@@ -11,7 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.emc.metalnx.controller.api.SearchApiController;
+import com.emc.metalnx.controller.api.GalleryApiController;
 import com.emc.metalnx.core.domain.exceptions.DataGridException;
 
 /**

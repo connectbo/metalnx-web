@@ -3132,7 +3132,11 @@ legend.scheduler-border {
 	z-index: 1;
 }
 
+<<<<<<< HEAD
 /* ------------------------------------ Gallery View -------------------------------------------------- */
+=======
+/* ==========================Gallery View====================================== */
+>>>>>>> 2dd5d10ff7f39bb1d5bc822a9564a02c22937da0
 
 .large {
 	width: 125px;
@@ -3172,6 +3176,7 @@ legend.scheduler-border {
 	text-align: center;
   }
   
+<<<<<<< HEAD
   .thumbnail_name{
 	margin:5px auto 5px auto;
   }
@@ -3191,4 +3196,8 @@ legend.scheduler-border {
 
   .widgets{
     margin-left: 35%;
+=======
+  .thumbnailName{
+	margin:5px auto 5px auto;
+>>>>>>> 2dd5d10ff7f39bb1d5bc822a9564a02c22937da0
   }
